@@ -42,3 +42,35 @@ flowchart TD
     F --> G[Packing]
     G --> H[Shipping]
 ```
+
+
+---
+
+## 🧠 QA Strategy
+- Validation of inventory consistency across locations  
+- Event sequencing (receiving → putaway → picking → dispatch)  
+- Negative testing for blocked operations  
+
+---
+
+## ⚠️ Risk Areas
+- Incorrect stock allocation  
+- Location mismatch  
+- Concurrency issues during picking  
+
+---
+
+## 📊 Test Coverage
+- Receiving ✔️  
+- Putaway ✔️  
+- Picking ✔️  
+- Dispatch ✔️  
+- Inventory count ⚠️ partial  
+
+---
+
+## 💼 Business Impact
+Warehouse errors may cause:
+- Shipment delays  
+- Inventory inaccuracies  
+- Financial discrepancies  
